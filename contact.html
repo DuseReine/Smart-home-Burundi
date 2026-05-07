@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Smart Home Burundi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root{
+    --blue:#007AFF;
+    --black:#000;
+    --card:#0b0b0b;
+    --text:#fff;
+    --muted:#9a9a9a;
+    --border:rgba(255,255,255,0.08);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Plus Jakarta Sans',sans-serif;
+}
+
+body{
+    background:var(--black);
+    color:var(--text);
+}
+
+/* HEADER */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.8);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid var(--border);
+}
+
+.nav{
+    max-width:1000px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    padding:18px 20px;
+}
+
+.logo{
+    display:flex;
+    gap:10px;
+    font-weight:800;
+}
+
+.logo i{color:var(--blue);}
+
+/* HERO */
+.hero{
+    padding:140px 20px 30px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:2.6rem;
+    font-weight:800;
+}
+
+.hero p{
+    color:var(--muted);
+    margin-top:10px;
+}
+
+/* CARTE */
+.container{
+    max-width:600px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+}
+
+/* INFOS */
+.info{
+    margin-top:20px;
+    text-align:left;
+}
+
+.info p{
+    margin:12px 0;
+    color:var(--muted);
+    font-size:1rem;
+}
+
+.info i{
+    color:var(--blue);
+    margin-right:10px;
+}
+
+/* MESSAGE SIMPLE */
+.msg{
+    margin-top:25px;
+    color:#fff;
+    font-size:1rem;
+    line-height:1.6;
+}
+
+/* FOOTER */
+footer{
+    margin-top:60px;
+    padding:25px;
+    text-align:center;
+    color:var(--muted);
+    border-top:1px solid var(--border);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="nav">
+
+<div class="logo">
+<i class="fas fa-cube"></i> SMART HOME
+</div>
+
+<nav class="nav-links">
+<a href="index.html">Accueil</a>
+<a href="solutions.html">Solutions</a>
+<a href="apropos.html">À Propos</a>
+<a href="contact.html" class="btn-demo">Contact</a>
+</nav>
+
+</div>
+</header>
+
+<section class="hero">
+    <h1>Contact</h1>
+    <p>Nous sommes disponibles pour vous accompagner</p>
+</section>
+
+<div class="container">
+
+<div class="card">
+
+    <h2>Smart Home Burundi</h2>
+
+    <div class="info">
+        <p><i class="fas fa-phone"></i> +257 61741101</p>
+        <p><i class="fas fa-envelope"></i> dusereinemugwaneza@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Bujumbura, Burundi</p>
+    </div>
+
+    <div class="msg">
+        Nous sommes spécialisés dans les solutions de maison intelligente :  
+        sécurité, confort et contrôle à distance.  
+        <br><br>
+        N’hésitez pas à nous contacter pour toute information ou projet.
+    </div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Smart Home Burundi
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Burundi | L'Excellence Connectée</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #007AFF; 
+            --bg-dark: #000000;
+            --bg-card: #111111;
+            --text-main: #FFFFFF;
+            --text-muted: #86868b;
+            --border: rgba(255, 255, 255, 0.08);
+            --glass: rgba(255, 255, 255, 0.04);
+            --radius-lg: 28px;
+            --transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* BOUTON DEMO */
+.btn-demo{
+background:linear-gradient(135deg,#007AFF,#00C6FF);
+padding:10px 18px;
+border-radius:100px;
+color:#fff !important;
+font-weight:600;
+box-shadow:0 0 20px rgba(0,122,255,0.25);
+transition:0.3s;
+}
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg-dark); color: var(--text-main); scroll-behavior: smooth; }
+        body { overflow-x: hidden; line-height: 1.6; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+        .gradient-text {
+            background: linear-gradient(180deg, #FFFFFF 0%, #007AFF 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header { position: fixed; top: 0; width: 100%; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); z-index: 1000; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; height: 80px; }
+        .logo { font-size: 1.3rem; font-weight: 800; display: flex; align-items: center; gap: 10px; text-decoration: none; color: white; }
+        .logo i { color: var(--primary); }
+        .nav-links { display: flex; gap: 2.5rem; }
+        .nav-links a { font-size: 0.9rem; color: var(--text-muted); text-decoration: none; transition: var(--transition); }
+        .nav-links a:hover { color: var(--text-main); }
+
+        .hero { height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; padding-top: 80px; }
+        .hero h1 { font-size: clamp(2.5rem, 7vw, 5rem); font-weight: 800; letter-spacing: -2px; line-height: 1.1; margin-bottom: 1.5rem; }
+        .hero p { color: var(--text-muted); font-size: 1.2rem; max-width: 900px; margin: 0 auto 2.5rem; }
+
+        section { padding: 100px 0; border-bottom: 1px solid var(--border); }
+        .section-title { font-size: 2.5rem; font-weight: 800; margin-bottom: 3rem; text-align: center; }
+        .intro-text { font-size: 1.4rem; color: var(--text-muted); text-align: center; max-width: 950px; margin: 0 auto 4rem; line-height: 1.9; }
+
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+        .feature-card {
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+        .feature-card:hover { transform: translateY(-10px); border-color: var(--primary); }
+        .feature-card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 25px; display: block; }
+        .feature-card h3 { font-size: 1.5rem; margin-bottom: 15px; }
+        .feature-card p { color: var(--text-muted); font-size: 1rem; line-height: 1.7; }
+
+        .quote-box { background: var(--glass); padding: 60px; border-radius: var(--radius-lg); text-align: center; margin: 50px 0; border: 1px solid var(--primary); }
+        .quote-box h2 { font-size: 2rem; font-style: italic; font-weight: 500; line-height: 1.6; }
+
+        .work-sectors { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px; }
+        .sector-tag { background: var(--glass); padding: 15px 30px; border-radius: 100px; border: 1px solid var(--border); display: flex; align-items: center; gap: 10px; font-weight: 600; }
+
+        footer { padding: 50px 0; text-align: center; color: var(--text-muted); font-size: 0.9rem; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container nav-container">
+        
+        <a href="index.html" class="logo">
+            <i class="fas fa-microchip"></i> SMART HOME
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="apropos.html">À Propos</a>
+            
+<a href="contact.html" class="btn-demo">Contact</a>
+         
+        </nav>
+
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>L'espace qui <br> <span class="gradient-text">vous comprend</span>.</h1>
+        <p>
+            Un bâtiment moderne ne se limite plus à être un simple espace physique.  
+            Il devient un environnement intelligent capable d’observer, d’analyser et de réagir à votre mode de vie.  
+            Chaque instant est optimisé pour votre confort, votre sécurité et votre tranquillité.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">C’est quoi un bâtiment intelligent ?</h2>
+        <p class="intro-text">
+            Un bâtiment intelligent est une nouvelle génération d’habitat connecté, conçu pour interagir avec ses occupants.  
+            Il comprend vos habitudes, anticipe vos besoins et adapte automatiquement son comportement pour améliorer votre quotidien.
+        </p>
+
+        <div class="grid-3">
+            <div class="feature-card">
+                <i class="fas fa-robot"></i>
+                <h3>Autonomie</h3>
+                <p>
+                    Le système prend des décisions seul en fonction de l’environnement.  
+                    Lumière, énergie, sécurité : tout est géré automatiquement pour vous simplifier la vie au maximum.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-users-viewfinder"></i>
+                <h3>Réactivité</h3>
+                <p>
+                    Le bâtiment détecte instantanément votre présence et ajuste les paramètres en temps réel.  
+                    Il crée un environnement parfaitement adapté à chaque situation.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-bell"></i>
+                <h3>Vigilance</h3>
+                <p>
+                    Grâce à une surveillance intelligente continue, vous êtes informé immédiatement en cas d’activité inhabituelle ou de danger potentiel.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background:#050505;">
+    <div class="container">
+        <h2 class="section-title">Sécurité & Contrôle</h2>
+
+        <div class="grid-3">
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Contrôle Simplifié</h3>
+                <p>
+                    Depuis votre smartphone, vous pilotez l’ensemble de votre bâtiment où que vous soyez dans le monde, avec une interface simple et intuitive.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-fingerprint"></i>
+                <h3>Accès Biométrique</h3>
+                <p>
+                    Votre identité devient votre clé. Le bâtiment reconnaît vos empreintes et garantit un accès sécurisé et personnalisé.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-video"></i>
+                <h3>Surveillance Cognitive</h3>
+                <p>
+                    Une analyse intelligente des mouvements permet de détecter toute activité inhabituelle et d’assurer une protection permanente 24h/24.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Confort & Automatisation</h2>
+
+        <p class="intro-text">
+            L’objectif est simple : transformer votre espace en un environnement qui travaille pour vous.  
+            Vous ne gérez plus votre maison, c’est elle qui s’adapte à votre rythme de vie.
+        </p>
+
+        <div class="grid-3">
+            <div class="feature-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Lumière Intelligente</h3>
+                <p>
+                    L’éclairage s’ajuste automatiquement selon la luminosité naturelle, l’heure de la journée et votre présence dans la pièce.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-thermometer-half"></i>
+                <h3>Climatisation</h3>
+                <p>
+                    La température est régulée automatiquement pour garantir un confort optimal en toutes saisons sans effort manuel.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Énergie Optimisée</h3>
+                <p>
+                    Le système analyse votre consommation énergétique et ajuste intelligemment les ressources pour réduire les coûts et le gaspillage.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background:#050505;">
+    <div class="container">
+        <h2 class="section-title">Où intervenons-nous ?</h2>
+
+        <div class="work-sectors">
+            <div class="sector-tag"><i class="fas fa-home"></i> Maisons intelligentes</div>
+            <div class="sector-tag"><i class="fas fa-hotel"></i> Hôtels connectés</div>
+            <div class="sector-tag"><i class="fas fa-building"></i> Bureaux modernes</div>
+            <div class="sector-tag"><i class="fas fa-shopping-bag"></i> Commerces automatisés</div>
+        </div>
+
+        <div class="quote-box">
+            <h2>
+                "Rendre les bâtiments plus intelligents, plus sûrs et plus simples à utiliser au quotidien,  
+                en combinant technologie, confort et innovation humaine."
+            </h2>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container" style="text-align:center;">
+        
+        <p>© 2026 Smart Home Burundi. Conçu pour l'excellence et l’innovation.</p>
+
+        <div style="margin-top: 20px; display:flex; justify-content:center; flex-wrap:wrap; gap:20px; color: var(--text-muted); font-size:0.95rem;">
+
+            <a href="mailto:dusereinemugwaneza@gmail.com" style="display:flex; align-items:center; gap:8px; color:inherit;">
+                <i class="fas fa-envelope"></i>
+                dusereinemugwaneza@gmail.com
+            </a>
+
+            <a href="tel:+25761741101" style="display:flex; align-items:center; gap:8px; color:inherit;">
+                <i class="fas fa-phone"></i>
+                +257 65057508
+            </a>
+
+            <a href="https://wa.me/25761741101" target="_blank" style="display:flex; align-items:center; gap:8px; color:inherit;">
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
